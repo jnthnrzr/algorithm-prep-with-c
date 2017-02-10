@@ -9,10 +9,12 @@ private:
 	int data;
 	Node* next;
 
+
 public:
 	Node(int number) {
 		this->data = number;
 	}
+
 
 	int get_data() {
 		return this->data;
@@ -20,20 +22,19 @@ public:
 
 	void set_data(int number) {
 		this->data = number;
-	}	
-	
-	Node get_next() {
+	}
+
+	Node* get_next() {
 		return this->next;
 	}
 
-	void set_next(Node n) {
-		this->next = n
+	void set_next(Node* n) {
+		this->next = n;
 	}
 };
-
-int main(){
-
-	printf("hello world \n");
-
-	return 0;
-}
+//int main(){
+//
+//	printf("hello world \n");
+//
+//	return 0;
+//}
