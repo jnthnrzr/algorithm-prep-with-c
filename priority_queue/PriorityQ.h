@@ -11,11 +11,21 @@ private:
 public:
 	PriorityQ(); //constructor
 	~PriorityQ(); //destructor
-	Boolean empty();
+	bool empty();
 	void insert(int num);
+	void max_heapify(int index);
 	int removeMax();
+	void deheapify(int index);
 
-	int get_size();
-	void set_size(int num);
+	int left(int index) {
+		return 2*index+1;
+	}
+	int right(int index) {
+		return 2*index+2;
+	}
+	int parent(int index) {
+		return index/2;
+	}
+
 
 };
